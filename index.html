@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <article class="stats-card">
+
+      <picture class="card_img" style="--overlay:url(images/image-header-mobile.jpg)">
+        <!--the following sets the desktop photo to appear
+        if the browser window is 600px or larger-->
+        <source srcset="images/image-header-desktop.jpg" media="(min-width: 600px)">
+        <!--<<img src="images/image-header-mobile.jpg" alt="card_img">
+
+        
+          div class="header">
+            <img src="images/image-header-mobile.jpg" alt="card_img">
+          </div>-->
+      </picture>
+
+
+      <div class="card_content">
+
+        <div class="stats-title">
+          <h1 class="stats-title_main">Get</h1>
+          <h1 class="stats-title_accent">insights</h1>
+          <h1 class="stats-title_main">that help your business grow.</h1>
+        </div>
+
+        <div class="stats-summary">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </div>
+
+        <div class="stats-values">
+          <!--If you do not specify 1, 2, or 3, elements end up 
+            lining up on top of each other inside of side by side-->
+          <div class="stats-values-1">
+            <p class="stats-values-num">10k+</p>
+            <p class="stats-values-text">companies</p>
+          </div>
+
+          <div class="stats-values-2">
+            <p class="stats-values-num">314</p>
+            <p class="stats-values-text">templates</p>
+          </div>
+
+
+          <div class="stats-values-3">
+            <p class="stats-values-num">12M+</p>
+            <p class="stats-values-text">queries</p>
+          </div>
+
+        </div>
+
+
+        <!--End of this part defines text content area minus the image-->
+      </div>
+      <!--End of this part defines end of border right below attribution-->
+    </article>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Myro Joy Lee</a>.
+    </div>
+
+  </main>
+</body>
+
+</html>
