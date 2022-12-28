@@ -177,12 +177,11 @@ h1 {
     /* a few things change when it gets wider, the following
 are the font size changes and paragraph changes*/
 
-
     .stats-card {
         grid-template-columns: 1fr 1fr;
         margin: 2rem;
-        max-width: 1070px;
-        max-height: 845px;
+        max-width: 1440px;
+        max-height: 800px;
     }
 
     .stats-values {
