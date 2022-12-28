@@ -95,10 +95,8 @@ body {
     display: grid;
     place-content: center;
     margin: 5rem 1.5rem;
-
     font-family: var(--ff--title);
 
-    /*height: 1000px;*/
 
 }
 
@@ -108,8 +106,9 @@ body {
     display: grid;
     border-radius: 0.5rem;
     overflow: hidden;
-    max-width: 400px;
-    max-height: 900px;
+    max-width: 1080px;
+    /*max-height: 900px;*/
+
 
 }
 
@@ -172,24 +171,29 @@ h1 {
     color: var(--clr--neutral-300);
 }
 
-@media(min-width: 850px) {
+@media(min-width: 600px) {
 
     /* a few things change when it gets wider, the following
 are the font size changes and paragraph changes*/
 
+    h1 {
+        font-size: 2.1rem;
+    }
+
     .stats-card {
         grid-template-columns: 1fr 1fr;
         margin: 2rem;
-        max-width: 1440px;
-        max-height: 800px;
+        /*max-width: 1000px;
+        min-height: 555px;*/
     }
 
     .stats-values {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.4rem;
     }
 
-    .stats-values-num {
+     .stats-values-num {
         font-size: 1.5rem;
     }
 
@@ -198,19 +202,23 @@ are the font size changes and paragraph changes*/
     }
 
     .card_content {
-        order: 1; /* this line ensures picture goes to the right*/
+        order: 1;
+        /* this line ensures picture goes to the right*/
 
         text-align: left;
-        padding: 2.25rem 6rem 2.25rem 2.25rem;
+        padding: 1.75rem 3rem 1.75rem 2.75rem;
     }
 
     .card_img {
         order: 2;
+
     }
 
     .stats-summary {
         font-size: 0.875rem;
-        
+        padding-right: 3rem;
+        padding-bottom: 1.25rem;
+        line-height: 1.35rem;
     }
 
 }
